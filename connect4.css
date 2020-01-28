@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    letter-spacing: 10px;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 40px ivory solid;
+    box-sizing: content-box;
+    transform: translate(-30px, -30px);
+}
+
+body {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.player1 {
+    background: wheat;
+}
+
+.player2 {
+    background: turquoise;
+}
+.board {
+    display: flex;
+    justify-content: center;
+}
+.column {
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    font-family: helvetica;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: helvetica;
+}
+
+.winner {
+    z-index: 99999;
+    display: flex;
+    background: #4dffbb;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    width: 50%;
+    max-width: 400px;
+    height: 10vh;
+    top: 45%;
+    right: 0;
+    border-radius: 300px;
+    visibility: hidden;
+}
+
+.on {
+    transform: translateX(-130%);
+    display: flex;
+    align-items: center;
+    transition-property: transform;
+    transition-duration: 3s;
+    visibility: visible;
+}
+
+p {
+    justify-content: center;
+    font-family: helvetica;
+    font-size: 25px;
+    font-weight: bold;
+}
